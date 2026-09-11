@@ -1,0 +1,255 @@
+==============================================================================
+REDBELLY DAO PROPOSAL PRE-SCREENING REPORT
+==============================================================================
+Proposal: Continuation of Long-Term Marketing & PR Campaign with FINPR
+Screened: 2026-08-19T12:58:32.636Z
+Rubric: Proposal Review Checklist, ratified by Snapshot 6 October 2025, 4,347,753 For to 0 Against.
+
+------------------------------------------------------------------------------
+TREASURY GATE: BARRED
+------------------------------------------------------------------------------
+The proposal requests new treasury funding, which is suspended. The suspension
+passed 15,386,903 For to 0 Against and closed 2026-07-04. It suspends new
+treasury-funded proposals, new grant programs, new bounty programs and new
+discretionary treasury spending. This overrides Constitution v1.2 section 6.2
+Budgeting for any new request.
+
+Reopening: Every 6 months the High Council publishes a readiness assessment
+and recommendation. Continuing or reopening is then put to a community vote.
+
+The 11 criteria are still screened below, so the proposer receives a full
+review rather than a single blocking message.
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+Passed: 2 of 11
+Flagged: 5 of 11
+Needs human review: 4 of 11
+Of the flags, 1 is marked in the ratified text as not a dealbreaker.
+
+------------------------------------------------------------------------------
+CRITERION BY CRITERION
+------------------------------------------------------------------------------
+Criterion 1, Budget Alignment & Limits: NEEDS HUMAN REVIEW
+    For the reviewer: The working group annual allocation was not supplied, so
+    the ratified 25% limit cannot be tested. The request totals 15,050 USD
+    equivalent. Confirm the current allocation for this working group and
+    check it by hand.
+    Ratified flag condition: "Flag if missing USDT/RBNT split, excessive
+    allocation, or weak justification."
+    Enforces: Constitution v1.2 section 6.2 Budgeting: "Annual cap: 100,000
+    USDT RBNT: 10M total available for DAO incentives Quarterly splits to Pods
+    to be published at start of each quarter 10% minimum allocation reserved
+    for Open Innovation" Partial anchor: Section 6.2 Budgeting sets an annual
+    cap, a total RBNT pool, quarterly pod splits and an Open Innovation
+    reserve. It contains no 25% figure of any kind. The 25% limit in this
+    criterion exists only in the ratified checklist and has no constitutional
+    anchor. Constitution v1.2 section 1 Treasury Overview: "Token Treasury:
+    10,000,000 RBNT - for incentives, rewards, grants Stablecoin Reserve:
+    100,000 USDT annually - for operational costs and contributor payments"
+    Partial anchor: Distinguishes the two treasuries by function, USDT for
+    operational costs and contributor payments and RBNT for incentives,
+    rewards and grants. It does not frame the split as external spend versus
+    internal rewards, which is the checklist wording.
+    Superseded by: Budget Allocation per Proposal (Snapshot 0x1bd9879b, closed
+    2025-09-20, 2,569,012 For to 606,880 Against). The winning side was "Yes,
+    proposals may request more than a quarterly budget disbursement". This
+    loosens the quarterly split framework in Constitution section 6.2
+    Budgeting, so a request exceeding one quarter of a pod allocation is not
+    by itself a breach. Footing: firm. Temporary Suspension of new
+    treasury-funded activities of the Redbelly Community DAO Until Ecosystem
+    Readiness (Snapshot 0xc1db9174, closed 2026-07-04, 15,386,903 For to 0
+    Against). Suspends new treasury-funded proposals, new grant programs, new
+    bounty programs and new discretionary treasury spending until a future
+    governance vote reopens them. Existing approved commitments continue. This
+    suspends the operation of Constitution section 6.2 Budgeting for any new
+    request, so it is evaluated as a gate before the 11 criteria rather than
+    inside any one of them. Footing: firm.
+
+Criterion 2, Payment & Payout Structure: FLAG
+    Why: 28.1% of the total is requested upfront with no justification. The
+    ratified pass condition "Upfront requests require clear justification"
+    applies to any upfront request, whatever its size.
+    Ratified flag condition: "Flag if large upfront payments lack
+    justification or no milestone structure provided."
+    Enforces: Constitution v1.2 section 7 Contributor Expectations: "Tasks and
+    grants must define: Clear KPIs Timeline and milestones Reward structure
+    (RBNT/USDT)" Constitution v1.2 section 4.1 Process Overview: "Payment +
+    Archive (with public record)" Partial anchor: Places payment at the end of
+    the lifecycle, after final review, which supports post-completion payment.
+    It does not address partial upfront payments or what justification they
+    require.
+
+Criterion 3, Strategic Fit: NEEDS HUMAN REVIEW
+    For the reviewer: A link to DAO-wide goals is stated. The ratified
+    condition flags goals that are vague, which is a judgement no rule can
+    settle. Read the stated link and confirm it is specific.
+    Ratified flag condition: "Flag if alignment unclear or goals vague."
+    Enforces: Constitution v1.2 section 3 Working Groups (Pods): "Marketing
+    Pod Builder/Develop Pod Researcher Pod Community Pod Partnerships Pod"
+    Partial anchor: Names 5 pods, not the 3 working groups the criterion
+    refers to. The constitutional text is out of date here and the guild
+    consolidation vote is controlling. Constitution v1.2 section 10 Founding
+    Principles: "Alignment with Redbelly’s Infrastructure Vision DAO activity
+    must reinforce Redbelly’s broader ecosystem goals: scalable, secure, and
+    institution-grade blockchain infrastructure."
+    Superseded by: DAO Guild Structure - Consolidation (Snapshot 0x901e2873,
+    closed 2025-09-20, 1,363,897 For to 10,941 Against). Merged the
+    Partnerships and Research pods into the others, reducing the 5 pods listed
+    in Constitution section 3 to 3. This is why the ratified checklist names
+    three working groups rather than five. Footing: soft. Abstain, 1,801,054,
+    exceeded For, 1,363,897. The result carried on a plurality of votes cast
+    but the mandate is thin. A future vote could revisit it, and the
+    constitution was never amended to match.
+
+Criterion 4, Feasibility & Timeline: FLAG
+    Why: The proposal does not state what was checked to establish it does not
+    duplicate existing efforts.
+    For the reviewer: The ratified condition flags scope that is unrealistic
+    for the budget and resources. Read the scope statement against the budget
+    and confirm it is achievable.
+    Ratified flag condition: "Flag if timeline absent, milestones vague, or
+    scope unrealistic."
+    Enforces: Constitution v1.2 section 7 Contributor Expectations: "Tasks and
+    grants must define: Timeline and milestones" No constitutional anchor. No
+    section of Constitution v1.2 requires a proposal to show that it does not
+    duplicate existing efforts. This pass condition has no constitutional
+    anchor. Nearest related text: Section 10 Founding Principles,
+    "Constructive Collaboration over Silos", is thematically related but
+    states a collaboration principle for pods rather than a duplication check
+    on proposals.
+
+Criterion 5, Oversight & Accountability: FLAG
+    Why: The nominated oversight lead is the proposer, and is paid by this
+    proposal for the role. A self-nominated reviewer is not independent, which
+    is what the ratified condition requires. Constitution v1.2 section 5
+    requires disclosure of relevant relationships and recusal on
+    self-submitted proposals.
+    Ratified flag condition: "Flag if oversight or communication plan
+    missing."
+    Enforces: Constitution v1.2 section 5 Conflict of Interest Policy: "Pod
+    Leads, Council Members, and Reviewers must publicly disclose relevant
+    relationships Recusal is required for any vote on self-submitted proposals
+    Anonymous reviewers (if used) must submit written rationale; logs must be
+    audit-friendly" Partial anchor: Governs how reviewers must behave once
+    they exist, including disclosure and recusal, which is what makes a
+    self-nominated paid reviewer checkable. It does not require a per-proposal
+    independent reviewer to be nominated in the first place. Constitution v1.2
+    section 6.1 Transparency and Accountability: "Monthly treasury and revenue
+    dashboards published to the community Quarterly reporting required by each
+    working group Public access to all proposals, vote results, and treasury
+    activity" Partial anchor: Sets working group reporting at quarterly. The
+    criterion asks for monthly updates, which is stricter than the
+    constitution requires.
+    Known conflict: The criterion requires monthly updates in DAO channels.
+    Constitution section 6.1 Transparency and Accountability requires
+    quarterly reporting by each working group, and section 6.2 Transparency
+    repeats the quarterly cadence. The checklist is stricter than the
+    constitution it enforces. Screening applies the checklist standard, since
+    it is the ratified review instrument, and records the divergence here.
+
+Criterion 6, Impact & Measurement: PASS
+    Ratified flag condition: "Flag if no success criteria or only short-term
+    focus."
+    Enforces: Constitution v1.2 section 7 Contributor Expectations: "Tasks and
+    grants must define: Clear KPIs" Constitution v1.2 section 6.2
+    Transparency: "Quarterly Pod reporting on spend, outcomes, and KPIs"
+    Constitution v1.2 section 4.1 Process Overview: "Final Review by Guild +
+    Council" Partial anchor: Establishes a final review at the end of the
+    lifecycle. It does not establish a midpoint review, which the criterion
+    also asks for.
+
+Criterion 7, Risk & Mitigation: PASS
+    Ratified flag condition: "Flag if no risks or mitigation described."
+    Enforces: No constitutional anchor. Constitution v1.2 contains no risk
+    assessment or mitigation requirement for proposals. This criterion has no
+    constitutional anchor at all. Nearest related text: Section 10 Founding
+    Principles, "Transparency and Auditability", requires rationale and
+    documentation to be publicly visible, which is a disclosure principle
+    rather than a risk requirement.
+
+Criterion 8, Co-Funding & Leverage: FLAG (not a dealbreaker)
+    Why: No matching funds, sponsorships or in-kind contributions are noted.
+    The ratified condition records this as relevant but not a dealbreaker.
+    Ratified flag condition: "Flag if no leverage (not a dealbreaker, but
+    relevant)."
+    Enforces: No constitutional anchor. Constitution v1.2 says nothing about
+    matching funds, sponsorships or in-kind contributions. This criterion has
+    no constitutional anchor. Nearest related text: None. Section 6.2
+    Budgeting governs how the DAO spends its own funds and does not address
+    third party contributions.
+
+Criterion 9, Contribution Equity: NEEDS HUMAN REVIEW
+    For the reviewer: Rainbow Magician is the only paid contributor in this
+    proposal, so payout concentration cannot be judged from this submission
+    alone. Check the Snapshot archive for other proposals paying the same
+    individual in the same period before deciding whether the ratified
+    condition on concentrated payouts is met.
+    Ratified flag condition: "Flag if payouts concentrated with same
+    individual(s)."
+    Enforces: Constitution v1.2 section 5 Conflict of Interest Policy: "Limit:
+    One paid role per individual per quarter" Constitution v1.2 section 10
+    Founding Principles: "Merit-Based Funding and Roles Funding is earned
+    through clear deliverables and value - not connections or titles. No role
+    is permanent, and all are accountable." Partial anchor: States the
+    principle behind the criterion. It sets no testable limit on payout
+    concentration.
+    Known conflict: The criterion permits multiple paid lead roles where
+    justified. Constitution section 5 sets a hard limit of one paid role per
+    individual per quarter with no justification exception. The checklist is
+    looser than the constitution it enforces. Screening reports the checklist
+    verdict and raises the constitutional limit in the citation, so a reviewer
+    sees both.
+
+Criterion 10, Compliance & Ethical Standards: NEEDS HUMAN REVIEW
+    For the reviewer: Whether an activity carries regulatory or reputational
+    risk is a judgement no rule can settle. Read the activity summary and the
+    declared risks, then confirm against the Community Code of Conduct, which
+    is the document this criterion points at rather than Constitution v1.2.
+    The proposer has declared: "Presents no identified regulatory or
+    reputational concerns."
+    Ratified flag condition: "Flag if unclear or non-compliant activities
+    proposed."
+    Enforces: No constitutional anchor. Constitution v1.2 contains no code of
+    conduct and no compliance section. The document this criterion points at
+    did not exist in the constitution when the checklist was ratified. Nearest
+    related text: Section 10 Founding Principles is the nearest constitutional
+    relative and states values rather than conduct rules or compliance tests.
+    Superseded by: Community Code of Conduct (Snapshot 0x0503ba90, closed
+    2025-10-06, 4,042,179 For to 0 Against). Criterion 10 requires consistency
+    with the DAO code of conduct. Constitution v1.2 contains no code of
+    conduct. This proposal is the document the criterion actually points at,
+    and it was ratified after the constitution. Footing: firm.
+
+Criterion 11, Community Involvement: FLAG
+    Why: The proposal describes 1 discussion it intends to hold rather than
+    discussion that has taken place. The ratified condition requires evidence
+    of discussion with community members, and stated intent is not evidence.
+    Why: No co-authors or collaborators are named.
+    Ratified flag condition: "Flag if no signs of community input."
+    Enforces: Constitution v1.2 section 4.1 Process Overview: "Cross-Pod
+    Feedback via Discord (3-day window)" Partial anchor: Puts a feedback
+    window in the lifecycle after submission. The criterion asks for evidence
+    of discussion that has already happened, which is a different and earlier
+    test. No constitutional anchor. Section 8 Community Involvement shares its
+    name with this criterion but covers Genesis Leader voting power and
+    contributor acknowledgement through Galxe badges and archive mentions. It
+    does not require community consultation before a proposal is submitted.
+    The section name is a false friend and must not be cited as the anchor.
+    Nearest related text: Section 8 Community Involvement, by name only.
+    Superseded by: Community Consultation Policy - Authorization of Proposal
+    Discussions in Non-Official Channels (Snapshot 0xee2c6009, closed
+    2025-12-12, 15,364,381 For to 2,040 Against). Authorises proposal
+    discussion in non-official channels. Criterion 11 requires evidence of
+    community discussion, and Constitution section 8 Community Involvement
+    covers voting power and contributor acknowledgement rather than proposal
+    consultation. This policy is the controlling text for where consultation
+    may take place. Footing: firm.
+
+==============================================================================
+This report checks structure and stated content against the ratified
+checklist. It does not decide whether a proposal should be funded. Items
+marked NEEDS HUMAN REVIEW require a reviewer to answer the stated question
+before the criterion can be settled.
+==============================================================================

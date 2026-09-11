@@ -1,0 +1,287 @@
+@import "tailwindcss";
+
+/*
+ * Kinetic Consensus tokens, transcribed from the Task Board brand kit.
+ *
+ * Values are copied exactly. Where the kit gives a rule rather than a value,
+ * the rule is written as a comment next to the token it governs so it does not
+ * get lost. One accent, never a second. Depth is tonal, never shadowed.
+ */
+
+:root {
+  /* Dark surfaces, lowest to highest */
+  --rb-container-lowest: #0a1216;
+  --rb-surface: #0f181d;
+  --rb-background-deep: #121b20;
+  --rb-container: #1b252a;
+  --rb-surface-slate: #1e2a31;
+  --rb-container-high: #27323a;
+  --rb-outline-variant: #3a4650;
+  --rb-outline: #93a4ae;
+
+  /* Text on dark */
+  --rb-on-surface: #e4ebf0;
+  --rb-on-surface-secondary: #b8c4cc;
+  --rb-on-surface-muted: #93a4ae;
+
+  /* Accent and state. The solid fill is constant across themes. */
+  --rb-brand: #ef5350;
+  --rb-primary: #ffb3ae; /* accent text and links on dark */
+  --rb-ok: #86efac;
+  --rb-warn: #fcd34d;
+  --rb-destructive: #dc2626; /* the one place a second red is allowed */
+  --rb-on-brand: #ffffff; /* 3.49:1, so 18px, or 14px bold, and never smaller */
+
+  /* Shape */
+  --rb-radius-base: 4px;
+  --rb-radius-lg: 8px;
+  --rb-radius-full: 9999px;
+}
+
+/* The light counterpart is the same brand, not a second one. */
+:root.light {
+  --rb-container-lowest: #eef0f2;
+  --rb-surface: #f6f7f8;
+  --rb-background-deep: #f0f2f4;
+  --rb-container: #ffffff;
+  --rb-surface-slate: #ffffff;
+  --rb-container-high: #e7eaed;
+  --rb-outline-variant: #d3d8dd;
+  --rb-outline: #5c6b76;
+
+  --rb-on-surface: #16202a;
+  --rb-on-surface-secondary: #3c4a55;
+  --rb-on-surface-muted: #5c6b76;
+
+  --rb-primary: #b3272a; /* accent text darkens on light for the same contrast reason */
+}
+
+@theme inline {
+  --color-surface: var(--rb-surface);
+  --color-surface-slate: var(--rb-surface-slate);
+  --color-container-lowest: var(--rb-container-lowest);
+  --color-container: var(--rb-container);
+  --color-container-high: var(--rb-container-high);
+  --color-background-deep: var(--rb-background-deep);
+  --color-outline-variant: var(--rb-outline-variant);
+  --color-outline: var(--rb-outline);
+
+  --color-ink: var(--rb-on-surface);
+  --color-ink-secondary: var(--rb-on-surface-secondary);
+  --color-ink-muted: var(--rb-on-surface-muted);
+
+  --color-brand: var(--rb-brand);
+  --color-primary: var(--rb-primary);
+  --color-ok: var(--rb-ok);
+  --color-warn: var(--rb-warn);
+  --color-destructive: var(--rb-destructive);
+  --color-on-brand: var(--rb-on-brand);
+
+  --radius-base: var(--rb-radius-base);
+  --radius-lg: var(--rb-radius-lg);
+
+  /* Be Vietnam Pro carries every heading and all body copy. */
+  --font-sans: var(--font-be-vietnam-pro), ui-sans-serif, system-ui, sans-serif;
+  /* JetBrains Mono is functional only: ids, hashes, figures, timestamps. */
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
+html {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+body {
+  background: var(--rb-surface);
+  color: var(--rb-on-surface);
+  font-family: var(--font-sans);
+  /* Governance documents get read end to end, so leading stays at 1.5. */
+  line-height: 1.5;
+}
+
+/*
+ * Logo variant follows the background, not the theme name: light ink on any
+ * surface darker than #DADDE1, dark ink on anything lighter. Both variants are
+ * in the markup and one is shown, so the correct one survives server rendering.
+ */
+.logo-on-light {
+  display: none;
+}
+
+html.light .logo-on-dark {
+  display: none;
+}
+
+html.light .logo-on-light {
+  display: block;
+}
+
+/* Type scale from the kit. Hierarchy comes from weight and colour, not scale. */
+.headline-xl {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.headline-lg {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.body-lg {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.body-md {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.label-mono {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.label-caps {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Body copy holds 65 to 75 characters. Anything wider loses the reader. */
+.measure {
+  max-width: 68ch;
+}
+
+/* Label above the input, always. Focus takes the accent border plus a 2px aura. */
+.rb-field {
+  background: var(--rb-container-lowest);
+  border: 1px solid var(--rb-outline-variant);
+  border-radius: var(--rb-radius-base);
+  color: var(--rb-on-surface);
+  font-family: var(--font-sans);
+  font-size: 16px; /* strict floor: most board traffic arrives on a phone */
+  line-height: 1.5;
+  padding: 10px 12px;
+  width: 100%;
+  /* A grid or flex child defaults to min-width auto and refuses to shrink below
+     its content, which pushes wide controls out of their track. */
+  min-width: 0;
+}
+
+/*
+ * Date fields, which WebKit sizes to its own native control and not to the
+ * width the field is given, so on iOS the input sits outside its frame. The
+ * appearance reset is scoped to date inputs because .rb-field also dresses
+ * selects, and resetting those would take the dropdown arrow with it.
+ */
+input.rb-field[type='date'] {
+  -webkit-appearance: none;
+  appearance: none;
+  max-width: 100%;
+  position: relative;
+  /* Room for the calendar mark, which sits 12px in from the right edge. */
+  padding-right: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%2393a4ae' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4.5' width='18' height='16' rx='2'/%3E%3Cpath d='M3 9.5h18M8 2.5v4M16 2.5v4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px 18px;
+}
+
+/* The mark is drawn, not native, so it needs the light ink on a light surface. */
+html.light input.rb-field[type='date'] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%235c6b76' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4.5' width='18' height='16' rx='2'/%3E%3Cpath d='M3 9.5h18M8 2.5v4M16 2.5v4'/%3E%3C/svg%3E");
+}
+
+input.rb-field[type='date']::-webkit-date-and-time-value {
+  text-align: left;
+  margin: 0;
+}
+
+/*
+ * The native indicator is stretched over the whole field and made invisible, so
+ * the drawn mark is what shows and a tap anywhere in the field opens the
+ * picker. iOS has no indicator to stretch and opens its own picker on tap, so
+ * both ends up behaving the same way.
+ */
+input.rb-field[type='date']::-webkit-calendar-picker-indicator {
+  position: absolute;
+  inset: 0;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.rb-field::placeholder {
+  color: var(--rb-on-surface-muted);
+}
+
+.rb-field:focus {
+  border-color: var(--rb-brand);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--rb-brand) 45%, transparent);
+  outline: none;
+}
+
+.rb-field-mono {
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+}
+
+/*
+ * The homepage title only.
+ *
+ * headline-xl at 48px is the kit's top step and it is right for a page title,
+ * but the homepage title has to hold the top of the page on its own and reads
+ * undersized there. This steps it up while keeping the kit's weight and
+ * tracking, and the leading tightens because a line this size looks loose at
+ * the 1.1 that suits 48px.
+ */
+.headline-hero {
+  font-size: clamp(40px, 5.4vw, 62px);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+}
+
+/* Criterion accordions on the rubric page. */
+.rb-criterion > summary::-webkit-details-marker {
+  display: none;
+}
+
+.rb-criterion > summary:focus-visible {
+  outline: 2px solid var(--rb-brand);
+  outline-offset: 2px;
+}
+
+.rb-criterion[open] > summary .rb-chevron {
+  transform: rotate(180deg);
+}
+
+.rb-chevron {
+  transition: transform 150ms ease;
+}
+
+@media (max-width: 640px) {
+  .headline-xl {
+    font-size: 34px;
+  }
+
+  .headline-lg {
+    font-size: 25px;
+  }
+}
